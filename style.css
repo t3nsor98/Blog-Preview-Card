@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Fightree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: Fightree, sans-serif;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    font-size: 1rem;
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 0.9rem;
+    }
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(210, 210, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 400px;
+    width: 80vw;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.picture {
+    width: 100%;
+    min-height: 200px;
+    background: url(./assets/images/illustration-article.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.tag {
+    align-self: flex-start;
+    padding: 0.8rem;
+    background-color: yellow;
+    margin: 0.8rem 0;
+    border-radius: 0.6rem;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.date {
+    margin: 0.8rem 0;
+    font-size: 1rem;
+    ;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0.3rem 0;
+}
+
+.title:hover {
+    color: rgb(183, 183, 0);
+    text-decoration: underline;
+}
+
+.article {
+    color: grey;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.author-photo {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1.2rem;
+    background: url(profile-pic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.author-name {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
